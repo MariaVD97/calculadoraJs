@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/calculadora.css">-->
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 8px;
+        }
+
+        .contenedor button {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .btn-operacion {
+            background-color: red;
+            color: white;
+        }
+    </style>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div>
+        <header class="py-5"></header>
+    </div>
+       
+    <div class="container col-4">
+        <img src="img/" alt="">
+        <div class="resultado">
+            <span class="form-control text-end" id="resultado">0</span>
+        </div>
+                
+        <div class="py-2">
+            <div class="contenedor">
+                <button type="button" class="btn btn-success" id="reset">AC</button>
+                <button type="button" class="btn btn-primary" id="mas">+/-</button>
+                <button type="button" class="btn btn-secondary" id="porcentaje">%</button>
+                <button type="button" class="btn btn-success" id="borrar">←</button>
+                <button type="button" class="btn btn-info" id="siete">7</button>
+                <button type="button" class="btn btn-info" id="ocho">8</button>
+                <button type="button" class="btn btn-info" id="nueve">9</button>
+                <button type="button" class="btn btn-info btn-operacion" id="dividir">&divide;</button>
+                <button type="button" class="btn btn-info" id="cuatro">4</button>
+                <button type="button" class="btn btn-info" id="cinco">5</button>
+                <button type="button" class="btn btn-info" id="seis">6</button>
+                <button type="button" class="btn btn-info btn-operacion" id="multiplicar">x</button>
+                <button type="button" class="btn btn-info" id="uno">1</button>
+                <button type="button" class="btn btn-info" id="dos">2</button>
+                <button type="button" class="btn btn-info" id="tres">3</button>
+                <button type="button" class="btn btn-info btn-operacion" id="resta">-</button>
+                <button type="button" class="btn btn-info" id="cero">0</button>
+                <button type="button" class="btn btn-info" id="punto">.</button>
+                <button type="button" class="btn btn-warning" id="igual">=</button>
+                <button type="button" class="btn btn-info btn-operacion" id="suma">+</button>
+            </div>    
+        </div>
+    </div>    
+    <script src="js/bootstrap.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
+
